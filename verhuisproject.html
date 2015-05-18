@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" type="image/png" href="images/icon.png" />
+<meta charset="UTF-8">
+<title>AS Projects</title>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet" href="js/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<script>
+$(document).ready(function() {
+	$('#gallery a').fancybox({
+		overlayColor: '#661A00',
+		overlayOpacity: 0.5,
+		transitionIn: 'elastic',
+		transitionOut: 'elastic',
+		easingIn: 'easeInSine',
+		easingOut: 'easeOutSine',
+		titlePosition: 'outside' ,		
+		cyclic: true
+	});
+}); // end ready
+</script>	
+	
+		
+<!--
+<script type="text/javascript">
+		$(document).ready(function() {
+			$(".fancybox").fancybox();
+		});
+	</script>
+<script src="js/jquery.js"></script>
+<script type="text/javascript">
+		
+	$(document).ready(function(){
+		$('.logo2').addClass('animated');
+	});
+</script>
+-->
+
+
+<link href="styles.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab|La+Belle+Aurore|Marck+Script' rel='stylesheet' type='text/css'>
+
+<style>
+
+.logo{
+	position: absolute;
+	
+	margin-top: 350px;
+	margin-left: 90px;
+	margin-right: 0;
+	margin-bottom: 0;
+	padding: 0;
+	width: 200px;
+	height: 100px;
+	-webkit-perspective: 500px;
+	-moz-perspective: 500px;
+	-o-perspective: 500px;
+	perspective: 500px;
+}
+
+.logo2{
+	width: 200px;
+	height: 200px;
+	-webkit-transition: all 3s cubic-bezier(0.950,0.050,0.795,0.035);
+	-moz-transition: all 3s cubic-bezier(0.950,0.050,0.795,0.035);
+	-o-transition: all 3s cubic-bezier(0.950,0.050,0.795,0.035);
+	transition: all 3s cubic-bezier(0.950,0.050,0.795,0.035);
+	-webkit-transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	-o-transition-delay: 1s;
+	transition-delay: 2s;
+}
+
+.animated{
+	-webkit-transform: rotateY(-720deg);
+	-moz-transform: rotateY(-720deg);
+	-o-transform: rotateY(-720deg);
+	transform: rotateY(-720deg);
+}
+.h2verhuis{
+	font-size: 29px;
+}
+
+ul{
+	list-style-type: square;
+	
+}
+a{
+	text-decoration: none;
+}
+.links a:visited{
+	font-weight: bold;
+	color: #00002E;
+}
+.links a:hover{
+	color: #00002E;
+	font-weight: bold;
+}
+
+.para{
+	font-size: 20px;
+	color: #00002E;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-right: 30px;
+	font-family: 'Josefin Slab', serif;
+	text-align:justify;
+	
+}
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+	
+	<div class="logo">
+		<img class="logo2" src="images/logo.jpg">
+	</div>
+	
+	<div class="main">
+	
+	<ul class="menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="overmij.html">over mij</a></li>
+			<li><a href="ervaring.html">ervaring</a></li>
+			<li><a href="contact.php">Contact</a></li>
+	</ul>
+	
+	<h3 class="h2verhuis">Verhuisproject Van Stokkum Natuursteen</h3>
+		<p>
+		Onlangs heb ik de opdracht gekregen bij Van Stokkum BV het gehele verhuistraject naar het nieuwe bedrijfspand te mogen organiseren. 
+		De verhuizing had zowel betrekking op het personeel als het meubilair. Verder heb ik een belangrijke bijdrage geleverd aan de gehele inrichting.
+		De foto's hieronder geven een indicatie van het project. Het was een enorm leuk project en ook zeker zeer geslaagd! 
+		Mocht u binnen uw bedrijf een helpende hand nodig hebben voor een soortgelijke verhuisopdracht, dan kunt u <span class="arnica"><a href="contact.php">Contact</a></span> met mij opnemen.
+		
+		<br />
+		Hieronder staan de bedrijven waarmee ik heb samengewerkt:
+		<div>
+				<ul class="links">
+					<li><a href="http://www.vanstokkum.com/" target="_blank">				Natuursteen vloeren en wanden: Van Stokkum Natuursteen	</a></li>			
+					<li><a href="http://www.fraku.nl/" target="_blank">						CV en Airco: Fraku B.V.									</a></li>
+					<li><a href="http://www.devakverhuizer.nl/" target="_blank">			Verhuisbedrijf: De Vakverhuizer							</a></li>
+					<li><a href="http://www.destil.nl/" target="_blank">					Deurbeslag en sloten: DESTIL							</a></li>
+					<li><a href="http://www.tosj.nl" target="_blank">						Keuken en showroomstellage: Tosj Houtmaatwerk			</a></li>
+					<li><a href="http://www.bureautint.nl" target="_blank">					Communicatie en nieuwe huisstijl: Bureau Tint 			</a></li>
+					<li><a href="http://www.dirckx-schilderwerken.nl/" target= "_blank">		Schilderwerk: Dirckx Sevenum							</a></li>
+				</ul>
+		</div>
+		
+		</p>
+		<div class="para">
+			Hieronder ziet u de before en after foto's van het verhuisproject:
+		</div>
+		
+		<div id="gallery">
+			<a href="images/large/1.JPG" rel="gallery" title=""><img src="images/small/1_small.jpg" ></a>
+			<a href="images/large/2.JPG" rel="gallery" title=""><img src="images/small/2_small.jpg" ></a>
+			<a href="images/large/3.JPG" rel="gallery" title=""><img src="images/small/3_small.jpg" ></a>
+			<a href="images/large/4.JPG" rel="gallery" title=""><img src="images/small/4_small.jpg" ></a>
+			<a href="images/large/5.JPG" rel="gallery" title=""><img src="images/small/5_small.jpg" ></a>
+			<a href="images/large/6.JPG" rel="gallery" title=""><img src="images/small/6_small.jpg" ></a>
+			<a href="images/large/7.JPG" rel="gallery" title=""><img src="images/small/7_small.jpg" ></a>
+			<a href="images/large/8.JPG" rel="gallery" title=""><img src="images/small/8_small.jpg" ></a>
+			<a href="images/large/9.JPG" rel="gallery" title=""><img src="images/small/9_small.jpg" ></a>
+			<a href="images/large/10.jpg" rel="gallery" title=""><img src="images/small/10_small.jpg" ></a>
+			<a href="images/large/11.JPG" rel="gallery" title=""><img src="images/small/11_small.jpg" ></a>
+			<a href="images/large/12.jpg" rel="gallery" title=""><img src="images/small/12_small.jpg" ></a>
+			<a href="images/large/13.JPG" rel="gallery" title=""><img src="images/small/13_small.jpg" ></a>
+			<a href="images/large/14.JPG" rel="gallery" title=""><img src="images/small/14_small.jpg" ></a>
+			<a href="images/large/15.JPG" rel="gallery" title=""><img src="images/small/15_small.jpg" ></a>
+			<a href="images/large/16.jpg" rel="gallery" title=""><img src="images/small/16_small.jpg" ></a>
+			<a href="images/large/17.JPG" rel="gallery" title=""><img src="images/small/17_small.jpg" ></a>
+			<a href="images/large/18.jpg" rel="gallery" title=""><img src="images/small/18_small.jpg" ></a>
+			<a href="images/large/19.JPG" rel="gallery" title=""><img src="images/small/19_small.jpg" ></a>
+			<a href="images/large/20.jpg" rel="gallery" title=""><img src="images/small/20_small.jpg" ></a>
+			
+			
+			
+			
+			
+			<!--
+			
+			<a href="images/large/2.jpg" rel="gallery" title=""><img src="images/small/2_small.jpg" ></a>
+			
+			<a class="fancybox" rel="group" href="/images/large/1.jpg"><img src="images/small/1_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/2.jpg"><img src="images/small/2_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/3.jpg"><img src="images/small/3_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/4.jpg"><img src="images/small/4_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/5.jpg"><img src="images/small/5_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/6.jpg"><img src="images/small/6_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/7.jpg"><img src="images/small/7_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/8.jpg"><img src="images/small/8_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/9.jpg"><img src="images/small/9_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/10.jpg"><img src="images/small/10_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/11.jpg"><img src="images/small/11_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/12.jpg"><img src="images/small/12_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/13.jpg"><img src="images/small/13_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/14.jpg"><img src="images/small/14_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/15.jpg"><img src="images/small/15_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/16.jpg"><img src="images/small/16_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/17.jpg"><img src="images/small/17_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/18.jpg"><img src="images/small/18_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/19.jpg"><img src="images/small/19_small.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="/images/large/20.jpg"><img src="images/small/20_small.jpg" alt="" /></a>
+			-->
+		</div>
+		
+		<br />
+		<br />
+		
+	</div>
+
+	
+	<div class="footer">
+		<div class="footer2">
+			<div class="footer4">Contact</div>
+			<div class="arnica">Arnica Schreurs</div>
+			<div class="footer3">Helbeek 32</div>
+			<div class="footer3">5911CX Venlo</div>
+			<div class="footer3">06-46090488</div>
+			<div class="footer3">info@asprojects.nu</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+
